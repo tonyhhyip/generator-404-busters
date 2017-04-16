@@ -1,0 +1,42 @@
+{
+  "name": "generator-404-busters",
+  "version": "0.0.1",
+  "description": "Generator for 404 Busters",
+  "homepage": "github.com/404busters/generator-404-busters",
+  "author": {
+    "name": "Team 404 Busters"
+  },
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "jest": "^19.0.2",
+    "yeoman-assert": "^3.0.0",
+    "yeoman-test": "^1.6.0"
+  },
+  "dependencies": {
+    "yeoman-generator": "^1.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "test": "npm run test:lint && npm run test:script",
+    "test:script": "jest",
+    "test:lint": "eslint ."
+  },
+  "repository": "404busters/generator-404-busters",
+  "license": "BSD-2-Clause-FreeBSD",
+  "engines": {
+    "node": ">=4",
+    "npm": "3.10.x"
+  }
+}

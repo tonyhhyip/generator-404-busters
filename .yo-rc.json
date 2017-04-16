@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Team 404 Busters",
+      "authorEmail": "",
+      "authorUrl": ""
+    }
+  }
+}
