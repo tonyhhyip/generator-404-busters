@@ -1,0 +1,1 @@
+# Yeoman Generator for 404busters
