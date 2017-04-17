@@ -34,7 +34,7 @@
     "test:lint": "eslint ."
   },
   "repository": "404busters/generator-404-busters",
-  "license": "BSD-2-Clause-FreeBSD",
+  "license": "BSD-2-Clause",
   "engines": {
     "node": ">=4",
     "npm": "3.10.x"

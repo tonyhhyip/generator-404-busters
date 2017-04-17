@@ -1,4 +1,4 @@
-Copyright (c) 2017 Team 404 Busters <tony@opensource.hk>
+Copyright (c) 2017 Team 404 Busters
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
