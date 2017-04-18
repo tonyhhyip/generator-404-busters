@@ -100,4 +100,11 @@ module.exports = class extends Generator {
 
     this.yarnInstall(packages, { dev: true });
   }
+
+  createGulpfile() {
+    this.fs.copyTpl(
+      this.templatePath('gulpfile.js'),
+      this.destinationPath('gulpfile.js')
+    );
+  }
 };

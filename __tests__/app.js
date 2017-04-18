@@ -14,7 +14,7 @@ describe('404-busters', () => {
     }));
 
   it('file generate', () => {
-    assert.file(['package.json']);
+    assert.file(['package.json', 'gulpfile.js']);
   });
 
   it('package.json', () => {

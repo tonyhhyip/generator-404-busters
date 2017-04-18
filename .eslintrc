@@ -4,6 +4,13 @@
   ],
   "rules": {
     "max-len": ["warn", { "code": 120, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
-    "strict": "off"
+    "strict": "off",
+    "comma-dangle": ["error", {
+       "functions": "ignore",
+       "arrays": "always-multiline",
+       "objects": "always-multiline",
+       "imports": "always-multiline",
+       "exports": "always-multiline"
+     }]
   }
 }
