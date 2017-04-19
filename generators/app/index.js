@@ -102,9 +102,37 @@ module.exports = class extends Generator {
   }
 
   createGulpfile() {
-    this.fs.copyTpl(
+    this.fs.copy(
       this.templatePath('gulpfile.js'),
       this.destinationPath('gulpfile.js')
     );
+  }
+
+  createGulpTasks() {
+    const done = this.async();
+    const path = this.destinationPath('gulp');
+    fs.mkdir(path, (e) => {
+      if (e) {
+        done(e);
+      } else {
+        done();
+      }
+    });
+  }
+
+  createBuildFiles() {
+    const done = this.async();
+    const path = this.destinationPath('build');
+    fs.mkdir(path, (e) => {
+      if (e) {
+        done(e);
+      } else {
+        this.fs.copy(
+          this.templatePath('build/webpack.*.js'),
+          this.destinationPath('build')
+        );
+        done();
+      }
+    });
   }
 };
