@@ -135,4 +135,15 @@ module.exports = class extends Generator {
       }
     });
   }
+
+  copyDeploymentScript() {
+    this.fs.copy(
+      this.templatePath('deploy.sh'),
+      this.destinationPath('deploy.sh')
+    );
+  }
+
+  printMessage() {
+    this.log('Finish Generating');
+  }
 };
