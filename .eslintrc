@@ -1,6 +1,6 @@
 {
   "extends": [
-    "airbnb"
+    "airbnb-base"
   ],
   "rules": {
     "max-len": ["warn", { "code": 120, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
