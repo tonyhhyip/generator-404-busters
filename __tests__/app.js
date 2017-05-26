@@ -4,7 +4,7 @@ const path = require('path');
 const helpers = require('yeoman-test');
 const assert = require('yeoman-assert');
 
-/* globals jest, it, expect, describe, beforeEach, describe */
+/* globals it, describe, beforeEach, describe */
 
 describe('404-busters', () => {
   beforeEach(() => helpers.run(path.join(__dirname, '..', 'generators', 'app'))
